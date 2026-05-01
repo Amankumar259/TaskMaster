@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx server.ts",
+    "start": "cross-env NODE_ENV=production tsx server.ts",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "del /s /q dist || echo 'dist folder removed'",
@@ -33,7 +34,9 @@
     "react-dom": "^19.0.1",
     "react-router-dom": "^7.14.2",
     "tailwind-merge": "^3.5.0",
-    "url": "^0.11.4"
+    "url": "^0.11.4",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
@@ -44,9 +47,7 @@
     "@types/morgan": "^1.9.10",
     "@types/node": "^22.14.0",
     "autoprefixer": "^10.4.21",
-    "cross-env": "^10.1.0",
     "tailwindcss": "^4.1.14",
-    "tsx": "^4.21.0",
     "typescript": "~5.8.2",
     "vite": "^6.4.2"
   }
