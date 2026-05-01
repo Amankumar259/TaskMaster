@@ -1,0 +1,27 @@
+name: TaskMaster
+root: .
+
+services:
+  - type: web
+    name: taskmaster-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run dev
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: MONGO_URI
+        fromDatabase:
+          name: taskmaster-db
+          property: connectionString
+      - key: JWT_SECRET
+        sync: false
+
+databases:
+  - name: taskmaster-db
+    databaseName: taskmaster
+    plan: free
+    region: ohio

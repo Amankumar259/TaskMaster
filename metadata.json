@@ -1,0 +1,6 @@
+{
+  "name": "TaskMaster Pro - Backend Management System",
+  "description": "A production-ready full-stack task management system featuring JWT authentication, role-based access control (RBAC), and a modular Express backend with Prisma/SQLite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
