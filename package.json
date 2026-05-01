@@ -20,6 +20,7 @@
     "clsx": "^2.1.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
     "express": "^4.22.1",
     "express-validator": "^7.3.2",
@@ -30,13 +31,12 @@
     "morgan": "^1.10.1",
     "motion": "^12.23.24",
     "path": "^0.12.7",
-    "react": "^19.0.1",
+    "react": "^19.2.5",
     "react-dom": "^19.0.1",
     "react-router-dom": "^7.14.2",
     "tailwind-merge": "^3.5.0",
-    "url": "^0.11.4",
-    "cross-env": "^10.1.0",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "url": "^0.11.4"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
